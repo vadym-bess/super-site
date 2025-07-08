@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="icon" href="images/favpng_ddf4d83748c2008b2b284db6dbb86d0c.png" type="image/png">
+    <meta name="description" content="Super Site Business & Partnerships">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="header">
+          <h2 class="header-logo">Super Site</h2>
+            <nav class="nav-web">
+                    <a class="header-web-link" href="/">Home</a>
+                   
+
+                   
+            </nav>
+            <img class="menu" src="images/menu-white.svg" alt="menu">
+        </div>
+        <div id="myModal" class="modal">
+           
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <a class="header-mob-link" href="/">Home</a>
+             
+
+            </div>
+          </div>
+    </header>
+
+  <main>
+    <div class="container">
+      <div class="centered">
+        <img src="images/820c958dc06d821343d8ce0729b289ea.jpeg" alt="device">
+      </div>
+       
+        <h2>  
+            Interested in partnering with Super Site or discussing business opportunities? Contact our team to learn more about collaborations, retail opportunities, and corporate solutions.
+        </h2>
+        <h2> Business Contact Information:</h2>
+       <ul>
+        <li>Business Inquiries:<a type="email" href="mailto:business@Super Site.com"> business@Super Site.com</a></li>
+        <li>Partnership Requests: Fill out our Partnership Form</li>
+       </ul>
+    
+       <h2> Connect with Us:</h2>
+       
+       <ul>
+        <li><a rel="nofollow" target="_blank" href="https://x.com/Super Site?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Twitter</a></li>
+        <li><a rel="nofollow" target="_blank" href="https://www.linkedin.com/company/Super Sitehq/">LinkedIn</a> </li>
+      </ul>
+      <br><br>
+       
+       <p>Learn More: Visit <a rel="nofollow" href="Super Site.com/business">Super Site.com/business</a> for our full range of corporate services.
+    </p>
+        
+    </div>
+  </main>
+
+    <footer class="footer">
+       
+        <div class="policy-thumb">
+          <a href="policy.html" class="footer-text policy">Privacy Policy</a>
+          <p class="footer-text">Super Site Live 2025. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    // Get the modal
+    const modal = document.getElementById("myModal");
+  
+    // Get the button that opens the modal
+    const openModalBtn = document.querySelector(".menu");
+  
+    // Get the <span> element that closes the modal
+    const closeBtn = document.querySelector(".modal .close");
+  
+    // Get all buttons that should close the modal
+    const headerWebLinks = document.querySelectorAll(".header-web-link");
+  
+    // When the user clicks the button, open the modal 
+    openModalBtn.addEventListener("click", function(event) {
+      event.preventDefault();
+      modal.style.display = "block";
+      document.body.classList.add("modal-open");
+    });
+  
+    // When the user clicks on <span> (x), close the modal
+    closeBtn.onclick = function() {
+      modal.style.display = "none";
+      document.body.classList.remove("modal-open");
+    };
+  
+    // When the user clicks on any header-web-link, close the modal
+    headerWebLinks.forEach(link => {
+      link.addEventListener("click", function() {
+        modal.style.display = "none";
+        document.body.classList.remove("modal-open");
+      });
+    });
+  
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+        document.body.classList.remove("modal-open");
+      }
+    };
+  });
+  
+    </script>
+
+   
+</body>
+</html>
